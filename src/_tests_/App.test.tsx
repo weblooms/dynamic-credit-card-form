@@ -10,7 +10,7 @@ beforeEach(() => {
           title: "Credit Card Application",
           description: "Please fill out the form",
           steps: [{ title: "Step 1", fields: [] }],
-          submit: { label: "Submit" },
+          submit: { label: "Submit Application" },
         }),
     } as any)
   ) as unknown as typeof global.fetch;
@@ -26,9 +26,10 @@ test("renders loading state initially", () => {
 });
 
 test("renders error state if fetch fails", async () => {
-  (global.fetch as unknown as vi.Mock).mockImplementationOnce(() =>
+  global.fetch = vi.fn(() =>
     Promise.reject("API is down")
-  );
+  ) as typeof global.fetch;
+
   render(<App />);
   await waitFor(() => {
     expect(screen.getByText(/Error while Loading/i)).toBeInTheDocument();
