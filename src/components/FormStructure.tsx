@@ -98,7 +98,6 @@ const FormStructure = ({ schema }: ScehmaProps) => {
           <>
             <h2 className="submit-msg">{schema.submit.successMessage}</h2>
             <p className="timestamp">Submitted at: {timestamp}</p>
-            {console.log(formData, "hjgjhgjh")}
             <div>
               <FormDetails formData={formData} />
             </div>
