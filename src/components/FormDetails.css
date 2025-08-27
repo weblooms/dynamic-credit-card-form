@@ -1,0 +1,30 @@
+.info-box {
+  border: 1px solid #ddd;
+  padding: 12px 16px;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  background-color: #fafafa;
+  font-size: 14px;
+}
+
+.info-title {
+  margin: 0 0 8px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #333;
+}
+
+.info-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.info-list li {
+  margin-bottom: 4px;
+  color: #444;
+}
+
+.info-list strong {
+  color: #000;
+}

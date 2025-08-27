@@ -1,0 +1,101 @@
+.form-container {
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background-color: #fafafa;
+}
+
+.form-title {
+  font-size: 22px;
+  margin-bottom: 5px;
+}
+
+.form-description {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.step-title {
+  font-size: 18px;
+  margin: 15px 0;
+}
+
+.form-field {
+  margin-bottom: 15px;
+}
+
+.error-text {
+  color: red;
+  font-size: 13px;
+  margin-top: 4px;
+}
+
+.last-submission {
+  background: #f0f8ff;
+  padding: 8px 10px;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  font-size: 13px;
+}
+
+.button-group {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.btn {
+  padding: 8px 14px;
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+  transition: background 0.2s ease;
+}
+
+.primary-btn {
+  background: #4a90e2;
+  color: white;
+}
+
+.primary-btn:hover {
+  background: #357ab8;
+}
+
+.secondary-btn {
+  background: #eee;
+  color: #333;
+}
+
+.secondary-btn:hover {
+  background: #ddd;
+}
+
+.clear-btn {
+  margin-top: 15px;
+  background: #ffdddd;
+  color: #a00;
+}
+
+.clear-btn:hover {
+  background: #ffbbbb;
+}
+.submit-msg {
+  color: green;
+}
+.timestamp {
+  border: 1px solid #333;
+  padding: 2px;
+  cursor: pointer;
+}
+.form-summary {
+  background: #f7f7f7;
+  padding: 10px;
+  border-radius: 4px;
+  font-size: 13px;
+  overflow-x: auto;
+}

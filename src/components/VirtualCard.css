@@ -1,0 +1,39 @@
+.virtual-card {
+  width: 340px;
+  height: 200px;
+  border-radius: 16px;
+  padding: 20px;
+  background: linear-gradient(135deg, #4a90e2, #5d9cec);
+  color: #fff;
+  font-family: "Segoe UI", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.vc-header {
+  font-size: 16px;
+  font-weight: 600;
+  opacity: 0.9;
+}
+
+.vc-number {
+  font-size: 22px;
+  letter-spacing: 3px;
+  margin: 20px 0;
+}
+
+.vc-footer {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+.vc-name {
+  font-weight: 500;
+}
+
+.vc-expiry {
+  font-weight: 500;
+}

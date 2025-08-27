@@ -1,0 +1,31 @@
+input,
+select {
+  width: 100%;
+  padding: 8px 10px;
+  margin: 6px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+.required-field {
+  color: red;
+}
+input:focus,
+select:focus {
+  border-color: #4a90e2;
+  box-shadow: 0 0 4px rgba(74, 144, 226, 0.4);
+}
+
+select {
+  background-color: #fff;
+  cursor: pointer;
+}
+
+input[type="checkbox"] {
+  width: auto;
+  margin-right: 8px;
+  transform: scale(1.1);
+  cursor: pointer;
+}
