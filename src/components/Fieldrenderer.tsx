@@ -21,11 +21,12 @@ const FieldRenderer = ({
     case "date":
       return (
         <>
-          <label>
+          <label htmlFor={field.id}>
             <span className="required-field">{required && "*"}</span>
             {fieldLabel}:
           </label>
           <input
+            id={field.id}
             type={field.type}
             placeholder={field.placeholder}
             value={value}
@@ -36,11 +37,15 @@ const FieldRenderer = ({
     case "select":
       return (
         <>
-          <label>
+          <label htmlFor={field.id}>
             <span className="required-field">{required && "*"}</span>
             {fieldLabel}:
           </label>
-          <select value={value} onChange={(e) => onChange(e.target.value)}>
+          <select
+            value={value}
+            onChange={(e) => onChange(e.target.value)}
+            id={field.id}
+          >
             <option value="">Select...</option>
             {field.options?.map((opt: any) => (
               <option key={opt.value} value={opt.value}>
